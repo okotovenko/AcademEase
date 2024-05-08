@@ -383,8 +383,9 @@ body::after {
 .popup form input,
 .popup form textarea,
 .popup form .select {
-  border: 0.5px solid #3e3c41;
+  border: 0.5px solid #3e3c41 !important;
   color: #000000;
+  border-radius: none !important;
 }
 
 .popup form input::-webkit-input-placeholder, .popup form textarea::-webkit-input-placeholder, .popup form .select::-webkit-input-placeholder {
@@ -2060,8 +2061,9 @@ h2 {
 }
 
 .form textarea {
-  border: 0.5px solid #f5f4eb;
+  border: 0.5px solid #f5f4eb !important;
   resize: none;
+  border-radius: none !important;
 }
 
 .form input,
@@ -2102,7 +2104,7 @@ h2 {
 }
 
 .iti__arrow {
-  border: none;
+  border: none !important;
   position: relative;
 }
 
@@ -4669,6 +4671,12 @@ button.swiper-pagination-bullet {
 @media (max-width: 31.25em) {
   .header__messengers {
     display: none;
+  }
+
+  .error__container .header__messengers {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
