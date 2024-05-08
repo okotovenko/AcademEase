@@ -3665,6 +3665,22 @@ button.swiper-pagination-bullet {
     margin-bottom: 3.75rem;
   }
 
+  .calculation {
+    padding-bottom: 8rem;
+  }
+
+  .calculation {
+    padding-top: 7.5rem;
+  }
+
+  .calculation__decor-left {
+    max-width: 28.125rem;
+  }
+
+  .calculation__decor-right {
+    max-width: 40.3125rem;
+  }
+
   .reviews {
     padding-top: 3.75rem;
   }
@@ -3914,18 +3930,6 @@ button.swiper-pagination-bullet {
   .hero__decor-4 {
     height: 5.4375rem;
   }
-
-  .calculation {
-    padding-bottom: 8rem;
-  }
-
-  .calculation__decor-left {
-    max-width: 28.125rem;
-  }
-
-  .calculation__decor-right {
-    max-width: 40.3125rem;
-  }
 }
 
 @media (max-width: 20em) {
@@ -4131,6 +4135,22 @@ button.swiper-pagination-bullet {
 
   .calculation {
     margin-bottom: 1.875rem;
+  }
+
+  .calculation {
+    padding-bottom: 3.75rem;
+  }
+
+  .calculation {
+    padding-top: 3.75rem;
+  }
+
+  .calculation__decor-left {
+    max-width: 11.375rem;
+  }
+
+  .calculation__decor-right {
+    max-width: 10.9375rem;
   }
 
   .reviews {
@@ -4550,8 +4570,14 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .calculation {
-    display: none;
+  .calculation__decor-left {
+    left: -12%;
+    top: -40%;
+  }
+
+  .calculation__decor-right {
+    right: 2%;
+    top: 18%;
   }
 
   .reviews__top {
@@ -4649,16 +4675,17 @@ button.swiper-pagination-bullet {
 
   .contacts__left > img,
   .contacts__left > picture {
-    margin-bottom: -46%;
+    margin-bottom: -45%;
   }
 
   .contacts__left picture source,
   .contacts__left picture img {
-    margin-bottom: -46%;
+    margin-bottom: -45%;
   }
 
   .contacts__right {
     max-width: 100%;
+    padding-bottom: 0;
   }
 }
 
@@ -5282,6 +5309,54 @@ button.swiper-pagination-bullet {
 @supports not (margin-bottom: clamp( 1.875rem , 1.2924757282rem  +  2.9126213592vw , 3.75rem )) {
     .calculation {
       margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (padding-bottom: clamp( 3.75rem , 2.4296116505rem  +  6.6019417476vw , 8rem )) {
+    .calculation {
+      padding-bottom: clamp( 3.75rem , 2.4296116505rem  +  6.6019417476vw , 8rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 3.75rem , 2.4296116505rem  +  6.6019417476vw , 8rem )) {
+    .calculation {
+      padding-bottom: calc(3.75rem + 4.25 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (padding-top: clamp( 3.75rem , 2.5849514563rem  +  5.8252427184vw , 7.5rem )) {
+    .calculation {
+      padding-top: clamp( 3.75rem , 2.5849514563rem  +  5.8252427184vw , 7.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 3.75rem , 2.5849514563rem  +  5.8252427184vw , 7.5rem )) {
+    .calculation {
+      padding-top: calc(3.75rem + 3.75 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (max-width: clamp( 11.375rem , 6.1711165049rem  +  26.0194174757vw , 28.125rem )) {
+    .calculation__decor-left {
+      max-width: clamp( 11.375rem , 6.1711165049rem  +  26.0194174757vw , 28.125rem );
+    }
+}
+
+@supports not (max-width: clamp( 11.375rem , 6.1711165049rem  +  26.0194174757vw , 28.125rem )) {
+    .calculation__decor-left {
+      max-width: calc(11.375rem + 16.75 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (max-width: clamp( 10.9375rem , 1.8112864078rem  +  45.6310679612vw , 40.3125rem )) {
+    .calculation__decor-right {
+      max-width: clamp( 10.9375rem , 1.8112864078rem  +  45.6310679612vw , 40.3125rem );
+    }
+}
+
+@supports not (max-width: clamp( 10.9375rem , 1.8112864078rem  +  45.6310679612vw , 40.3125rem )) {
+    .calculation__decor-right {
+      max-width: calc(10.9375rem + 29.375 * (100vw - 20rem) / 64.375);
     }
 }
 
@@ -6022,42 +6097,6 @@ button.swiper-pagination-bullet {
 @supports not (height: clamp( 4.9375rem , 4.4759615385rem  +  0.9615384615vw , 5.4375rem )) {
     .hero__decor-4 {
       height: calc(4.9375rem + 0.5 * (100vw - 48rem) / 52);
-    }
-}
-
-@supports (padding-bottom: clamp( 7.5rem , 7.0384615385rem  +  0.9615384615vw , 8rem )) {
-    .calculation {
-      padding-bottom: clamp( 7.5rem , 7.0384615385rem  +  0.9615384615vw , 8rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 7.5rem , 7.0384615385rem  +  0.9615384615vw , 8rem )) {
-    .calculation {
-      padding-bottom: calc(7.5rem + 0.5 * (100vw - 48rem) / 52);
-    }
-}
-
-@supports (max-width: clamp( 22.25rem , 16.8269230769rem  +  11.2980769231vw , 28.125rem )) {
-    .calculation__decor-left {
-      max-width: clamp( 22.25rem , 16.8269230769rem  +  11.2980769231vw , 28.125rem );
-    }
-}
-
-@supports not (max-width: clamp( 22.25rem , 16.8269230769rem  +  11.2980769231vw , 28.125rem )) {
-    .calculation__decor-left {
-      max-width: calc(22.25rem + 5.875 * (100vw - 48rem) / 52);
-    }
-}
-
-@supports (max-width: clamp( 21.5625rem , 4.2548076923rem  +  36.0576923077vw , 40.3125rem )) {
-    .calculation__decor-right {
-      max-width: clamp( 21.5625rem , 4.2548076923rem  +  36.0576923077vw , 40.3125rem );
-    }
-}
-
-@supports not (max-width: clamp( 21.5625rem , 4.2548076923rem  +  36.0576923077vw , 40.3125rem )) {
-    .calculation__decor-right {
-      max-width: calc(21.5625rem + 18.75 * (100vw - 48rem) / 52);
     }
 }
 }
