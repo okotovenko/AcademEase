@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ua">
+<!--Підключення Open Graph -->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> -->
+<!--<html prefix="og: https://ogp.me/ns#"> -->
+
+<head>
+	<title>AcademEase</title>
+	<meta charset="UTF-8">
+	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240508194340">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css?_v=20240508194340">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
+	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
+	<meta name="author" content="АВТОР">
+	<!-- Open Graph -->
+	<!-- <meta property="og:site_name" content="---" /> -->
+	<!--<meta property="og:description" content="---"> -->
+	<!--<meta property="og:title" content="---" /> -->
+	<!--<meta property="og:type" content="website" /> -->
+	<!--<meta property="og:image" content="img/1200_container.jpg" /> -->
+	<!-- <meta property="og:url" content="https://periodontist.com.ua/">  -->
+	<!--<meta property="og:image:secure_url" content="img/630_container.jpg" /> -->
+	<!--<meta property="og:image:type" content="image/jpg" /> -->
+	<!--<meta property="og:image:width" content="400" /> -->
+	<!--<meta property="og:image:height" content="300" /> -->
+	<!--<meta property="og:image:alt" content="container" /> -->
+	<!--<meta property="og:video" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:secure_url" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:type" content="application/x-shockwave-flash" /> -->
+	<!--<meta property="og:video:width" content="400" /> -->
+	<!--<meta property="og:video:height" content="300" /> -->
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="#00544e" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class='header__menu menu'>
+					<button type='button' class='menu__icon icon-menu'> <span></span></button>
+					<nav class='menu__body'>
+						<ul class='menu__list'>
+							<li class='menu__item'><a href='#' class='menu__link' data-goto=".about">Про
+									нас</a></li>
+							<li class='menu__item'><a href='#' class='menu__link' data-goto=".help">Послуги</a></li>
+							<li class='menu__item'><a href='#' class='menu__link' data-goto=".reviews">Відгуки</a></li>
+							<li class='menu__item'><a href='#' class='menu__link' data-goto=".contacts">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__logotype">
+					<a href='#' class='header__logo'><img src='img/logo.svg' alt='logo'></a>
+				</div>
+				<div class="header__contacts">
+					<a class="header__tel" href="tel:+38(073)1027003">+38 (073) 102 70 03</a>
+					<div class="header__messengers">
+						<a class="header__messenger _icon-insta" href="https://bit.ly/instacadem"></a>
+						<a class="header__messenger _icon-tg" href="https://bit.ly/chatbotacadem"></a>
+						<a class="header__messenger _icon-viber" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<h1>Не можеш самостійно впоратись із навчанням? <span>Ми допоможемо!</span></h1>
+					<button class="button" data-popup="#popup">Отримати допомогу</button>
+					<div class="hero__img">
+						<picture><source srcset="img/hero/01.webp" type="image/webp"><img class="hero__decor-1" src="img/hero/01.png" alt="decor"></picture>
+						<picture><source srcset="img/hero/02.webp" type="image/webp"><img class="hero__decor-2" src="img/hero/02.png" alt="decor"></picture>
+						<picture><source srcset="img/hero/03.webp" type="image/webp"><img class="hero__decor-3" src="img/hero/03.png" alt="decor"></picture>
+						<picture><source srcset="img/hero/04.webp" type="image/webp"><img class="hero__decor-4" src="img/hero/04.png" alt="decor"></picture>
+						<picture><source srcset="img/hero/students.webp" type="image/webp"><img class="hero__students" src="img/hero/students.png" alt="students"></picture>
+						<picture><source srcset="img/hero/students-mob.webp" type="image/webp"><img class="hero__students-mob" src="img/hero/students-mob.png" alt="students"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2>КОРОТКО про НАС В ЦИФРАХ</h2>
+					<div class="about__counters">
+						<div class="about__counter">
+							<div class="about__number">4+</div>
+							<div class="about__text">
+								<p>роки допомагаємо студентам у навчанні</p>
+							</div>
+						</div>
+						<div class="about__counter">
+							<div class="about__number">30+</div>
+							<div class="about__text">
+								<p>послуг надаємо</p>
+							</div>
+						</div>
+						<div class="about__counter">
+							<div class="about__number">150+</div>
+							<div class="about__text">
+								<p>предметів, за якими пишемо роботи</p>
+							</div>
+						</div>
+						<div class="about__counter">
+							<div class="about__number">6+</div>
+							<div class="about__text">
+								<p>років — середній стаж роботи наших авторів</p>
+							</div>
+						</div>
+						<div class="about__counter">
+							<div class="about__number">2000+</div>
+							<div class="about__text">
+								<p>робіт виконуємо щороку</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__help help">
+				<div class="help__container">
+					<h2>яку саме допомогу ти отримаєш</h2>
+					<div class="help__items">
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/01.svg" alt="text design according to standards">
+							</div>
+							<h3>в оформленні тексту за стандартами</h3>
+							<div class="help__text">
+								<p>з посиланнями на джерела, вступом, висновками та нумерацією</p>
+							</div>
+						</div>
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/02.svg" alt="presentation">
+							</div>
+							<h3>презентація і доповідь на захист</h3>
+							<div class="help__text">
+								<p>за бажанням можна обрати 2 інших матеріали</p>
+							</div>
+						</div>
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/03.svg" alt="practical part">
+							</div>
+							<h3>у розробці практичної частини</h3>
+							<div class="help__text">
+								<p>розрахунки, креслення, емпірика, програмний продукт, графіка, тощо</p>
+							</div>
+						</div>
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/04.svg" alt="uniqueness">
+							</div>
+							<h3>у досягненні унікальності до 90% </h3>
+							<div class="help__text">
+								<p>та проходженні антиплагіату</p>
+							</div>
+						</div>
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/05.svg" alt="development of the plan">
+							</div>
+							<h3>у розробці плану (змісту)</h3>
+							<div class="help__text">
+								<p>для якісного розкриття теми</p>
+							</div>
+						</div>
+						<div class="help__item">
+							<div class="help__img">
+								<img src="img/help/06.svg" alt="successful delivery of the project">
+							</div>
+							<h3>в успішній здачі проєкту</h3>
+							<div class="help__text">
+								<p>та отриманні бажаної оцінки</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__calculation calculation">
+				<img class="calculation__decor-left" src="img/calculation/left.svg" alt="decor">
+				<img class="calculation__decor-right" src="img/calculation/right.svg" alt="decor">
+				<div class="calculation__container">
+					<h2>точний розрахунок робимо після уточнення завдання</h2>
+					<div class="calculation__text">
+						<p>Залиште заявку і ми із вами зв'яжемось</p>
+					</div>
+					<button class="button-white" data-popup="#popup">Зв'яжіться зі мною</button>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<div class="reviews__top">
+						<h2>ознайомся із нашими відгуками</h2>
+						<div class="reviews__navigations" data-da=".reviews__container, 767">
+							<button type="button" class="reviews-button-prev _icon-arrow"></button>
+							<button type="button" class="reviews-button-next _icon-arrow"></button>
+						</div>
+					</div>
+					<div class="reviews__swiper swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/04.webp" type="image/webp"><img src="img/reviews/04.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/05.webp" type="image/webp"><img src="img/reviews/05.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/06.webp" type="image/webp"><img src="img/reviews/06.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/07.webp" type="image/webp"><img src="img/reviews/07.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/08.webp" type="image/webp"><img src="img/reviews/08.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/09.webp" type="image/webp"><img src="img/reviews/09.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/10.webp" type="image/webp"><img src="img/reviews/10.png" alt="review"></picture>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<picture><source srcset="img/reviews/11.webp" type="image/webp"><img src="img/reviews/11.png" alt="review"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__cases cases">
+				<div class="cases__container">
+					<div class="cases__top">
+						<h2>подивись фрагменти реальних кейсів</h2>
+						<div class="cases__navigations" data-da=".cases__container, 767">
+							<button type="button" class="cases-button-prev _icon-arrow"></button>
+							<button type="button" class="cases-button-next _icon-arrow"></button>
+						</div>
+					</div>
+					<div class="cases__swiper swiper">
+						<div class="cases__wrapper swiper-wrapper">
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Магістерська</span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Маркетинг</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>12 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>50</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>70%</span>
+									</div>
+								</div>
+								<a href="img/pdf/1..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Курсова </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Політологія</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>6 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>20-25</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>70%</span>
+									</div>
+								</div>
+								<a href="img/pdf/2..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Дипломна </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Економіка підприємства</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>12 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>60</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>70%</span>
+									</div>
+								</div>
+								<a href="img/pdf/3..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Курсова </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Аграрна справа</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>5 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>30</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>50%</span>
+									</div>
+								</div>
+								<a href="img/pdf/4..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Есе </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Філологія</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>1 день</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>3</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>70%</span>
+									</div>
+								</div>
+								<a href="img/pdf/5..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Реферат </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Географія</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>3 дні</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>15</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>60%</span>
+									</div>
+								</div>
+								<a href="img/pdf/6..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Магістерська </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Філологія</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>15 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>90-110</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>80%</span>
+									</div>
+								</div>
+								<a href="img/pdf/7..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Реферат </span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Право</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>3 дні</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>12-15</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>80%</span>
+									</div>
+								</div>
+								<a href="img/pdf/8..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Курсова</span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Економіка підприємства</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>5 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>40</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>60%</span>
+									</div>
+								</div>
+								<a href="img/pdf/9..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+							<div class="cases__slide swiper-slide">
+								<div class="cases__rows">
+									<div class="cases__row">
+										<p>З чим допомогли</p>
+										<span>Дипломна</span>
+									</div>
+									<div class="cases__row">
+										<p>Спеціальність</p>
+										<span>Економіка підприємства</span>
+									</div>
+									<div class="cases__row">
+										<p>Терміни</p>
+										<span>12 днів</span>
+									</div>
+									<div class="cases__row">
+										<p>Сторінки</p>
+										<span>35-40</span>
+									</div>
+									<div class="cases__row">
+										<p>Унікальність</p>
+										<span>80%</span>
+									</div>
+								</div>
+								<a href="img/pdf/10..pdf" target="_blank" class="cases__link _icon-arrow">Подивитись
+									фрагмент</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__why why">
+				<div class="why__container">
+					<h2>чому ми?</h2>
+					<div class="why__items">
+						<div class="why__item">
+							<div class="why__img">
+								<img src="img/why/01.svg" alt="text design according to standards">
+							</div>
+							<h3>офіційно</h3>
+							<div class="why__text">
+								<p>Зареєстрований ФОП, договір</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__img">
+								<img src="img/why/02.svg" alt="text design according to standards">
+							</div>
+							<h3>зручна оплата</h3>
+							<div class="why__text">
+								<p>Сплачуй безпечно, частинамі від 25%</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__img">
+								<img src="img/why/03.svg" alt="text design according to standards">
+							</div>
+							<h3>кращі спеціалісти</h3>
+							<div class="why__text">
+								<p>З твоїм завданням допоможе справжній експерт</p>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__img">
+								<img src="img/why/04.svg" alt="text design according to standards">
+							</div>
+							<h3>повний супровід</h3>
+							<div class="why__text">
+								<p>Безкоштовні виправлення до захисту</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__our our">
+				<div class="our__container">
+					<div class="our__left">
+						<h2>НАШІ ПОСЛУГИ – ЗАКОННІ Й БЕЗПЕЧНІ</h2>
+						<div class="our__text">
+							<p>Ми надаємо інформаційно-консультаційні послуги у науковій сфері (зареєстрований ФОП з
+								відповідним КВЕДом), а ви приймаєте рішення як розпоряджатись наданим матеріалом. Усі послуги
+								надаємо індивідуально та з гарантією відсутності плагіату. Гарантуємо повну конфіденційність -
+								ваша особиста інформація не буде передана третім особам і тим паче ВНЗ.</p>
+							<p>Є можливість підписання договору для захисту прав обох сторін, де прописуються терміни, вимоги,
+								вартість послуг.</p>
+						</div>
+					</div>
+					<div class="our__right">
+						<picture><source srcset="img/our/student.webp" type="image/webp"><img src="img/our/student.png" alt="student"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__question question">
+				<div class="question__container">
+					<h2>важливі питання</h2>
+					<div data-spollers data-one-spoller class="spollers">
+						<div class="question__left">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Хто займатиметься моїм
+									завданням?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Чи буде текст унікальним?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Чи вносите ви правки?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+						</div>
+						<div class="question__right">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Хто займатиметься моїм
+									завданням?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Чи буде текст унікальним?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Чи вносите ви правки?</button>
+								<div class="spollers__body">Каждую дипломную у нас выполняет специалист отдельной области наук,
+									зачастую имеющий стаж преподавания и написания студенческих работ не менее 10 лет. Мы
+									категорически не поручаем задания студентам и несем ответственность за каждый сданный проект.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__left">
+						<picture><source srcset="img/contact/student.webp" type="image/webp"><img src="img/contact/student.png" alt="student"></picture>
+					</div>
+					<div class="contacts__right">
+						<h2>звертайтеся вже зараз</h2>
+						<div class="contacts__text">
+							<p>Нам потрібно 15 хвилин, щоб розрахувати вартість та умови</p>
+						</div>
+						<form action="files/sendmail/sendmail.php" data-dev enctype="multipart/form-data" class="form" method="POST">
+							<input type="hidden" name="form_subject" value="Тема листа">
+							<label class="form-label">
+								<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Ваше ім’я">
+							</label>
+							<label class="form-label">
+								<input type="tel" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="">
+							</label>
+							<label class="form-label">
+								<select name="select" id="select" data-class-modif="form" data-scroll data-required>
+									<option value="" selected>Тип послуги</option>
+									<option value="Магістерська робота">Магістерська робота</option>
+									<option value="Дипломна робота">Дипломна робота</option>
+									<option value="Бакалаврська робота">Бакалаврська робота</option>
+									<option value="Курсова робота">Курсова робота</option>
+									<option value="Магістерська дисертація">Магістерська дисертація</option>
+									<option value="ВКР">ВКР</option>
+									<option value="Робота МАН">Робота МАН</option>
+									<option value="Контрольна робота">Контрольна робота</option>
+									<option value="Лабораторна робота">Лабораторна робота</option>
+									<option value="Звіт з практики">Звіт з практики</option>
+									<option value="Реферат">Реферат</option>
+									<option value="ЕСЕ">ЕСЕ</option>
+									<option value="Стаття ">Стаття </option>
+									<option value="Стаття ВАК">Стаття ВАК</option>
+									<option value="Дисертація">Дисертація</option>
+									<option value="Презентація">Презентація</option>
+									<option value="Тести">Тести</option>
+									<option value="Доповідь">Доповідь</option>
+									<option value="Тези">Тези</option>
+									<option value="Креслення">Креслення</option>
+									<option value="Програмний продукт">Програмний продукт</option>
+									<option value="Бізнес - план">Бізнес - план</option>
+									<option value="Розрахункова робота">Розрахункова робота</option>
+									<option value="Інше">Інше</option>
+								</select>
+							</label>
+							<label class="form-label">
+								<textarea name="theme" id="theme" placeholder="Коментар (не обов'язково)"></textarea>
+							</label>
+							<button type="submit" class="button-white">Відправити заявку</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href='#' class='footer__logo'><img src='img/logo-footer.svg' alt='logo'></a>
+				<nav class='footer__body'>
+					<ul class='footer__list'>
+						<li class='footer__item'><a href='#' class='footer__link' data-goto=".about">Про нас</a></li>
+						<li class='footer__item'><a href='#' class='footer__link' data-goto=".help">Послуги</a></li>
+						<li class='footer__item'><a href='#' class='footer__link' data-goto=".reviews">Відгуки</a></li>
+						<li class='footer__item'><a href='#' class='footer__link' data-goto=".contacts">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<a class="footer__tel" href="tel:+38(073)1027003">+38 (073) 102 70 03</a>
+					<div class="footer__messengers">
+						<a class="footer__messenger _icon-insta" href="https://bit.ly/instacadem"></a>
+						<a class="footer__messenger _icon-tg" href="https://bit.ly/chatbotacadem"></a>
+						<a class="footer__messenger _icon-viber" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<h2>Залишай заявку</h2>
+					<h3>Відповімо протягом 15 хвилин та розрахуємо ціну роботи</h3>
+					<form action="files/sendmail/sendmail.php" data-dev enctype="multipart/form-data" class="form" method="POST">
+						<input type="hidden" name="form_subject" value="Тема листа">
+						<label class="form-label">
+							<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="Ваше ім’я">
+						</label>
+						<label class="form-label">
+							<input type="tel" data-required name="tel" id="tel-popup" autocomplete="off" maxlength="255" data-error="Error" class="input" placeholder="">
+						</label>
+						<label class="form-label">
+							<select name="select" id="select-popup" data-class-modif="form" data-scroll data-required>
+								<option value="" selected>Тип послуги</option>
+								<option value="Магістерська робота">Магістерська робота</option>
+								<option value="Дипломна робота">Дипломна робота</option>
+								<option value="Бакалаврська робота">Бакалаврська робота</option>
+								<option value="Курсова робота">Курсова робота</option>
+								<option value="Магістерська дисертація">Магістерська дисертація</option>
+								<option value="ВКР">ВКР</option>
+								<option value="Робота МАН">Робота МАН</option>
+								<option value="Контрольна робота">Контрольна робота</option>
+								<option value="Лабораторна робота">Лабораторна робота</option>
+								<option value="Звіт з практики">Звіт з практики</option>
+								<option value="Реферат">Реферат</option>
+								<option value="ЕСЕ">ЕСЕ</option>
+								<option value="Стаття ">Стаття </option>
+								<option value="Стаття ВАК">Стаття ВАК</option>
+								<option value="Дисертація">Дисертація</option>
+								<option value="Презентація">Презентація</option>
+								<option value="Тести">Тести</option>
+								<option value="Доповідь">Доповідь</option>
+								<option value="Тези">Тези</option>
+								<option value="Креслення">Креслення</option>
+								<option value="Програмний продукт">Програмний продукт</option>
+								<option value="Бізнес - план">Бізнес - план</option>
+								<option value="Розрахункова робота">Розрахункова робота</option>
+								<option value="Інше">Інше</option>
+							</select>
+						</label>
+						<label class="form-label">
+							<textarea name="theme" id="theme" placeholder="Коментар (не обов'язково)"></textarea>
+						</label>
+						<button type="submit" class="button">Відправити заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240508194340"></script>
+	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/intlTelInput.min.js?_v=20240508194340"></script>
+	<script>
+		const input = document.querySelector("#tel");
+		window.intlTelInput(input, {
+			initialCountry: "ua",
+			onlyCountries: ["be", "bg", "hr", "cz", "dk",
+				"fr", "de", "hu", "ie", "it", "lv", "lt", "nl", "no", "pl", "ro", "sk", "es", "se", "ch", "ua", "gb"
+			],
+			separateDialCode: true,
+			strictMode: true,
+			useFullscreenPopup: false,
+			utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js",
+		});
+		const inputPopup = document.querySelector("#tel-popup");
+		window.intlTelInput(inputPopup, {
+			initialCountry: "ua",
+			onlyCountries: ["be", "bg", "hr", "cz", "dk",
+				"fr", "de", "hu", "ie", "it", "lv", "lt", "nl", "no", "pl", "ro", "sk", "es", "se", "ch", "ua", "gb"
+			],
+			separateDialCode: true,
+			strictMode: true,
+			useFullscreenPopup: false,
+			utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js",
+		});
+	</script>
+</body>
+
+</html>
